@@ -7,11 +7,13 @@
         <meta name="author" content="" />
         <title>Home</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}" />
+
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="{{ asset('css/std.css') }}" rel="stylesheet">
+
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -48,7 +50,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="../assets/servidor.jpg" alt="..." /></div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{{ asset('img/servidor.jpg') }}" alt="..." /></div>
                     </div>
                 </div>
             </header>
@@ -66,7 +68,7 @@
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="../assets/buscador.jpg" alt="..." />
+                                <img class="card-img-top" src="{{ asset('img/buscador.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Rede Iroha</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="https://www.rede-iroha.com/buscador-iroha/"><h5 class="card-title mb-3">Pagina de buscas rede Iroha</h5></a>
@@ -77,7 +79,7 @@
                         </div>
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="../assets/carteira.jpg" alt="..." />
+                                <img class="card-img-top" src="{{ asset('img/carteira.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Iroha Money</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="https://www.rede-iroha.com/carteira-iroha/"><h5 class="card-title mb-3">Carteira Iroha</h5></a>
@@ -88,7 +90,7 @@
                         </div>
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="../assets/apis.jpg" alt="..." />
+                                <img class="card-img-top" src="{{ asset('img/apis.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Rede Iroha</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="https://www.rede-iroha.com/api-iroha/"><h5 class="card-title mb-3">APIS iroha</h5></a>
@@ -99,7 +101,7 @@
                         </div>
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="../assets/git.jpg" alt="..." />
+                                <img class="card-img-top" src="{{ asset('img/git.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Rede Iroha</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="https://www.rede-iroha.com/arquivos-repos/"><h5 class="card-title mb-3">Arquivos e Repositorios Rede Iroha</h5></a>
@@ -110,7 +112,7 @@
                         </div>
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="../assets/pcb.jpg" alt="..." />
+                                <img class="card-img-top" src="{{ asset('img/pcb.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Rede Iroha</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="https://www.rede-iroha.com/infra-rede-iroha/"><h5 class="card-title mb-3">Infra Rede Iroha</h5></a>
@@ -121,7 +123,7 @@
                         </div>
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="../assets/comprar.jpg" alt="..." />
+                                <img class="card-img-top" src="{{ asset('img/comprar.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Rede Iroha</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="https://www.rede-iroha.com/preços/"><h5 class="card-title mb-3">Comprar irohas</h5></a>
@@ -192,6 +194,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+       
     </body>
 </html>
