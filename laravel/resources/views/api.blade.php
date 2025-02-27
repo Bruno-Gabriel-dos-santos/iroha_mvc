@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content />
-        <meta name="author" content />
-        <title>Contato</title>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>API Iroha</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}" />
         <!-- Bootstrap icons-->
@@ -13,7 +13,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ asset('css/std.css') }}" rel="stylesheet" />
     </head>
-    <body class="d-flex flex-column">
+    <body class="d-flex flex-column" >
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,42 +27,42 @@
                             <li class="nav-item"><a class="nav-link" href="https://www.rede-iroha.com/contato/">Contato</a></li>
                             <li class="nav-item"><a class="nav-link" href="https://www.rede-iroha.com/comprar/">Comprar Moedas</a></li>
                             <li class="nav-item"><a class="nav-link" href="https://www.rede-iroha.com/enviar-irohas/">Enviar Irohas</a></li>
+                            
                         </ul>
                     </div>
                 </div>
             </nav>
-            <!-- Page content-->
-            <section class="py-5">
-                <div class="container px-5">
-                    <!-- Contact form-->
-                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
-                        <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                            <h1 class="fw-bolder">Entre em contato</h1><br>
-                            <p class="lead fw-normal text-muted mb-0">No momento a rede Iroha se encontra em processo de desenvolvimento e por esse motivo estamos dando prioridade para a 
-                                criação e aperfeiçoamento dos sistemas da rede, portanto o site ainda não se encontra com suas funções em plena operação.<br>
-                                <br>
-                                <b>Você pode entrar em contato conosco através dos seguintes meios:
-                            </p><br>
+            
 
-                            <div class="bg-secondary rounded p-5 w-75 text-white mx-auto"> 
-                                <h3 class="text-white-50">Email rede-Iroha :</h3>
-                                <h3>contato@rede-iroha.com</h3><br>
-                                <h3 class="text-white-50">Email do desenvolvedor :</h3>
-                                <h3>brunoute@icloud.com</h3><br>
-                                
-                            </div>
-                            
+            <br><br><br>
+            
+            <div class="container px-5 bg-dark">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Estamos trabalhando na construção das APIS.</h1>
+                            <p class="lead fw-normal text-white-50 mb-4">A rede Iroha se encontra em processo de desenvolvimento e por isso nem todos os recursos estão 
+                                disponíveis no momento, para mais informações sobre o projeto entre em contato.</p>
+                             
                         </div>
-                        
-                        
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn btn-outline-light btn-lg px-4 me-sm-3" href="#1">Entrar em contato</a>
+                            
+                            
+                        </div><br><br>
                     </div>
-                    
+                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{{ asset('img/apis.jpg') }}" alt="..." /></div>
                 </div>
-            </section>
+            </div>
+            <br><br>
+             
+             
+            
+            <br><br><br>  <br><br><br> 
         </main>
+         
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
+        <footer class="bg-dark py-4 mt-auto" id="1">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">Todos os direitos reservados</div></div>
@@ -80,10 +80,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

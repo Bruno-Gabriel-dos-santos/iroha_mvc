@@ -24,11 +24,11 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="https://www.rede-iroha.com/home/">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://www.rede-iroha.com/sobre/">Sobre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://www.rede-iroha.com/contato/">Contato</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://www.rede-iroha.com/comprar/">Comprar Moedas</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://www.rede-iroha.com/enviar-irohas/">Enviar Irohas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Buscador_Rede_Iroha</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Area_de_transações</a></li>
                              
                             
                              
