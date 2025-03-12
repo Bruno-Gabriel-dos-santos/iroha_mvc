@@ -1,24 +1,24 @@
-
-Rede Iroha e suas bases de funcionamento
-
-==================================================================================================================================================================================================
-Esse é um descritivo inicial da rede Iroha e seu funcionamento
-
-
-camada 1 - moeda iroha e sistema de valor , sistema de funcionamento da nuvem / sistemas da rede worker 
-
-camada 2 - sistemas de bancos centrais , capacidade de imprimir e emprestar moedas auxiliares (iroha- nº banco), cadastro em rede offline , modelo de garantias a partir da camada 1 
-
-camada 3 - sistema de uso dos usuarios , apis , interfaces , uis , terminais de rede ... , se conectam a camada 1 e 2 permitindo o usuario a utilizar a rede.
-=================================================================================================================================================================================================
-Funcionamento
-
-A 1 camada funciona como um modelo de lastro oferecendo uma moeda sem expansão monetaria e um latro nos serviços e hardwares conectados na rede .
-
-a 2 camada funciona como meio de validação local da moeda online e offline criando uma contenção de danos e mediador nas necessidades dos usuarios.
-
-a 3 camada é a parte visual e funcional de comunicação do cliente com as APIS e sistemas da rede.
-=================================================================================================================================================================================================
+|
+|    Rede Iroha e suas bases de funcionamento
+|
+|==================================================================================================================================================================================================
+| Esse é um descritivo inicial da rede Iroha e seu funcionamento
+|
+|
+| camada 1 - moeda iroha e sistema de valor , sistema de funcionamento da nuvem / sistemas da rede worker 
+|
+| camada 2 - sistemas de bancos centrais , capacidade de imprimir e emprestar moedas auxiliares (iroha- nº banco), cadastro em rede offline , modelo de garantias a partir da camada 1 
+|
+| camada 3 - sistema de uso dos usuarios , apis , interfaces , uis , terminais de rede ... , se conectam a camada 1 e 2 permitindo o usuario a utilizar a rede.
+|=================================================================================================================================================================================================
+| Funcionamento
+|
+| A 1 camada funciona como um modelo de lastro oferecendo uma moeda sem expansão monetaria e um latro nos serviços e hardwares conectados na rede .
+|
+| a 2 camada funciona como meio de validação local da moeda online e offline criando uma contenção de danos e mediador nas necessidades dos usuarios.
+|
+| a 3 camada é a parte visual e funcional de comunicação do cliente com as APIS e sistemas da rede.
+|=================================================================================================================================================================================================
 
 
 
