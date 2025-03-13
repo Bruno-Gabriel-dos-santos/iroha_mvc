@@ -19,19 +19,19 @@
 |
 | a 3 camada é a parte visual e funcional de comunicação do cliente com as APIS e sistemas da rede.
 |=================================================================================================================================================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
+|
+|   Tarefas :: 
+|   
+|   1 - iniciar o sistema de transação e verificação da moeda Iroha Principal , gerar sistemas APIS de envio , processamento , recebimento e verificação e armazenamento
+|
+|   2 - iniciar a criação do sistema de bancos , suas identificações numericas , regras e sistemas de criação e expansão limite de moeda , emprestimos ....
+|
+|   3 - Realizar a criação dos sistemas worker para processamento , armazenamento e hospedagem
+|
+|   4 - Realizar a criação dos sistemas da moeda offline
+|
+|
+|
 
 
 
