@@ -1,27 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SiteController;
 
-Route::get('/', function () {
-    return view('home');
-});
 
-Route::get('/sobre', function () {
-    return view('sobre');
-});
 
-Route::get('/contato', function () {
-    return view('contato');
-});
 
-Route::get('/buscador', function () {
-    return view('browser');
-});
 
-Route::get('/api', function () {
-    return view('api');
-});
 
-Route::get('/infra', function () {
-    return view('infra');
-});
+
+Route::get('/api', [SiteController::class, 'api'])->name('api');
+Route::get('/infra', [SiteController::class, 'infra'])->name('infra');
+
+Route::get('/', [SiteController::class, 'home'])->name('home');
+Route::get('/sobre', [SiteController::class, 'sobre'])->name('sobre');
+Route::get('/contato', [SiteController::class, 'contato'])->name('contato');
+Route::get('/buscador-rede-iroha', [SiteController::class, 'buscador'])->name('buscador');
+Route::get('/area-transacoes', [SiteController::class, 'areaTransacoes'])->name('area.transacoes');
