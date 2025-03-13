@@ -7,59 +7,90 @@ use Illuminate\Http\Request;
 
 class IrohaController extends Controller
 {
-    
 
 
-    public function lista_de_nodos_atualizada(){
+
+    public function Lista_de_nodos_atualizada(){
 
             // nodos == sites da rede ....
 
     }
 
-    public function geração_de_blocos_inicial(){
+    public function Geração_de_blocos_inicial(){
 
-    }
-
-    public function sincronização_de_blocos_com_a_rede(){
 
 
     }
 
-    public function divisão_de_rede(){
+    public function Sincronização_de_blocos_com_a_rede(){
 
 
     }
 
-    public function verificação_de_rede(){
+    public function Divisão_de_rede(){
 
 
     }
 
-    public function recebe_moeda_iroha(){
+    public function Verificação_de_rede(){
+
 
     }
 
-    public function envia_moeda_iroha(){
+    public function Recebe_moeda_iroha(){
+
+    }
+
+    public function Envia_moeda_iroha(){
 
     }
 
 
-    public function processa_moeda_iroha_e_conta_ciclo(){
+    public function Processa_moeda_iroha_e_conta_ciclo(){
 
     }
 
-    public function adição_de_transação_a_lista_de_transaçoes(){}
+    public function Adição_de_transação_a_lista_de_transaçoes(){}
 
-    public function armazena_contratos(){}
-
-  
+    public function Armazena_contratos(){}
 
 
+  //=========================================================================================================================
+
+   
+    public function Cadastramento_de_BANCO(){
+
+    }
+
+    public function Configurações_Do_BANCO(){
+
+    }
+
+    public function Lista_dos_Bancos(){}
+
+    public function Bloqueio_de_margem(){
+
+    }
+
+    public function Validação_banco_contrato_margem(){
 
 
+        // valida o banco e sua legalidade baseado na margem e no processamento de seus contratos efetuados 
+        // verifica se o banco esta cumprindo suas obrigações
+    }
+
+    public function Contratos_BANCO(){
+        // contratos == transações internas do banco , compra de processamentos da rede , regras internas do banco e seu aceite pelos usuarios
+    }
+
+//===========================================================================================================================
+
+    public function Lista_nodos_worker(){
 
 
+    }
 
+    public function Contratos_worker(){}
 
 
 
