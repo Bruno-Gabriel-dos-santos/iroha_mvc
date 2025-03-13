@@ -11,7 +11,7 @@ class SiteController extends Controller
      */
     public function adm()
     {
-        //
+        return view('configADM'); 
     }
 
     public function home()

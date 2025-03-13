@@ -7,6 +7,71 @@ use Illuminate\Http\Request;
 
 class IrohaController extends Controller
 {
+    
+
+
+    public function lista_de_nodos_atualizada(){
+
+            // nodos == sites da rede ....
+
+    }
+
+    public function geração_de_blocos_inicial(){
+
+    }
+
+    public function sincronização_de_blocos_com_a_rede(){
+
+
+    }
+
+    public function divisão_de_rede(){
+
+
+    }
+
+    public function verificação_de_rede(){
+
+
+    }
+
+    public function recebe_moeda_iroha(){
+
+    }
+
+    public function envia_moeda_iroha(){
+
+    }
+
+
+    public function processa_moeda_iroha_e_conta_ciclo(){
+
+    }
+
+    public function adição_de_transação_a_lista_de_transaçoes(){}
+
+    public function armazena_contratos(){}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * Display a listing of the resource.
      */

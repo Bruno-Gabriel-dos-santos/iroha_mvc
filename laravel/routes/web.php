@@ -11,6 +11,10 @@ use App\Http\Controllers\SiteController;
 
 Route::get('/api', [SiteController::class, 'api'])->name('api');
 Route::get('/infra', [SiteController::class, 'infra'])->name('infra');
+Route::get('/amd', [SiteController::class, 'adm'])->name('adm');
+
+
+
 
 Route::get('/', [SiteController::class, 'home'])->name('home');
 Route::get('/sobre', [SiteController::class, 'sobre'])->name('sobre');
