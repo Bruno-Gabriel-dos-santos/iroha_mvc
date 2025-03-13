@@ -37,6 +37,8 @@ class IrohaController extends Controller
 
     }
 
+    public function Recebe_Banco_criptografico_Usuario(){}
+
     public function Recebe_moeda_iroha(){
 
     }
@@ -44,6 +46,8 @@ class IrohaController extends Controller
     public function Envia_moeda_iroha(){
 
     }
+
+    public function Compartilha_Transação(){}
 
 
     public function Processa_moeda_iroha_e_conta_ciclo(){
