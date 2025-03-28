@@ -14,6 +14,11 @@ class SiteController extends Controller
         return view('configADM'); 
     }
 
+    public function repo()
+    {
+        return view('repo'); 
+    }
+
     public function home()
     {
         return view('home'); 
@@ -34,10 +39,7 @@ class SiteController extends Controller
         return view('browser'); 
     }
 
-    public function areaTransacoes()
-    {
-        return view('areaDeTransação'); 
-    }
+   
     public function api()
     {
         return view('api'); 

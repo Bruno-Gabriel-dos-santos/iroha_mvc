@@ -26,15 +26,30 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
 
-                            <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('sobre') }}">Sobre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('contato') }}">Contato</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('buscador') }}">Buscador_Rede_Iroha</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('area.transacoes') }}">Area_de_transações</a></li>
-                             
-                            
-                             
-                        </ul>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ route('sobre') }}">Sobre</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ route('contato') }}">Contato</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ route('buscador') }}">Buscador_Rede_Iroha</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ route('area.transacoes') }}">Area_de_transações</a></li>
+    
+    @auth
+    <!-- Itens visíveis apenas quando logado -->
+    <li class="nav-item">
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit" class="nav-link" style="border: none; background: none; cursor: pointer;">
+                Sair
+            </button>
+        </form>
+    </li>
+    @endauth
+
+    @guest
+    <!-- Itens visíveis apenas para visitantes -->
+    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Registrar</a></li>
+    @endguest
+</ul>
                     </div>
                 </div>
             </nav>
@@ -73,7 +88,7 @@
                                 <img class="card-img-top" src="{{ asset('img/buscador.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Rede Iroha</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="https://www.rede-iroha.com/buscador-iroha/"><h5 class="card-title mb-3">Pagina de buscas rede Iroha</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link" href="{{ route('buscador') }}"><h5 class="card-title mb-3">Pagina de buscas rede Iroha</h5></a>
                                     <p class="card-text mb-0">Ache o que procura com a ferramenta de busca da rede Iroha.</p>
                                 </div>
                                 
@@ -95,7 +110,7 @@
                                 <img class="card-img-top" src="{{ asset('img/apis.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Rede Iroha</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="https://www.rede-iroha.com/api-iroha/"><h5 class="card-title mb-3">APIS iroha</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link" href="{{ route('api') }}"><h5 class="card-title mb-3">APIS iroha</h5></a>
                                     <p class="card-text mb-0">Tudo sobre as APIS disponiveis nativamente para rede Iroha e suas documentações.</p>
                                 </div>
                                 
@@ -106,7 +121,7 @@
                                 <img class="card-img-top" src="{{ asset('img/git.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Rede Iroha</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="https://www.rede-iroha.com/arquivos-repos/"><h5 class="card-title mb-3">Arquivos e Repositorios Rede Iroha</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link" href="{{ route('repo') }}"><h5 class="card-title mb-3">Arquivos e Repositorios Rede Iroha</h5></a>
                                     <p class="card-text mb-0">Uma pagina contendo todos os arquivos e versões estáveis para iniciar um servidor na rede Iroha.</p>
                                 </div>
                                 
@@ -117,7 +132,7 @@
                                 <img class="card-img-top" src="{{ asset('img/pcb.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Rede Iroha</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="https://www.rede-iroha.com/infra-rede-iroha/"><h5 class="card-title mb-3">Infra Rede Iroha</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link" href="{{ route('infra') }}"><h5 class="card-title mb-3">Infra Rede Iroha</h5></a>
                                     <p class="card-text mb-0">Aqui ficam disponíveis os recursos e serviços de infra da rede Iroha.</p>
                                 </div>
                                 
@@ -168,7 +183,7 @@
                                 </div>
                             </div><br><br><br>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://www.rede-iroha.com/sobre/">Descobrir tudo sobre a rede Iroha</a> 
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="{{ route('sobre') }}">Descobrir tudo sobre a rede Iroha</a> 
                             </div>
                         </div>
                     </div>
@@ -188,7 +203,7 @@
                         <span class="text-white mx-1">&middot;</span>
                         <a class="link-light small" href="#!">Termos de uso</a>
                         <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="https://www.rede-iroha.com/contato/">contato</a>
+                        <a class="link-light small" href="{{ route('contato') }}">contato</a>
                     </div>
                 </div>
             </div>

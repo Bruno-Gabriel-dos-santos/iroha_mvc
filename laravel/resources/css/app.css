@@ -1,12 +1,18 @@
-@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source "../**/*.blade.php";
-@source "../**/*.js";
-@source "../**/*.vue";
+.bg-white {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+.bg-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Input focus */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
 }
