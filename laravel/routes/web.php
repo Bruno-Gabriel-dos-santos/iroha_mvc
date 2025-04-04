@@ -18,7 +18,7 @@ Route::get('/repo', [SiteController::class, 'repo'])->name('repo');
 
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/', [SiteController::class, 'home'])->name('home');
 Route::get('/sobre', [SiteController::class, 'sobre'])->name('sobre');
 Route::get('/contato', [SiteController::class, 'contato'])->name('contato');
